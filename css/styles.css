@@ -17,6 +17,21 @@ body {
     background-color: var(--secondary-font-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .link {
     /* убрать подчеркивание */
     text-decoration: none;
@@ -33,6 +48,9 @@ button {
     /* рука+отсутствие бордера */
     cursor: pointer;
     border: none;
+}
+address {
+    font-size: normal;
 }
 .hidden {
     /* паттерн visually hidden */
@@ -52,8 +70,13 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-
     color: var(--page-header-logo-color);
+    display: flex;
+    align-items: center;
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
 }
 .logo {
     color: var(--main-logo-color);
@@ -81,17 +104,23 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-font-color);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .modal-open-btn {
     background: var(--main-logo-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: block;
     letter-spacing: 0.06em;
     color: var(--secondary-font-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 216px;
+    height: 50px;
 }
 
 .modal-open-btn:hover,
@@ -202,4 +231,60 @@ button {
     font-size: 16px;
     line-height: 1.9;
     color: var(--alternative-font-color);
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-wrap {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.menu {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.menu li {
+    margin-right: 50px;
+}
+.menu-item:last-child {
+    margin-right: 0px;
+}
+.contact-wrap li {
+    margin-right: 50px;
+}
+.contact-item:last-child {
+    margin-right: 0px;
+}
+.page-header {
+    border: 1px solid #ececec;
+}
+.order-wrap {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.specialty-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.specialty {
+    margin-right: 30px;
+    width: 270px;
+}
+.specialty:last-child {
+    margin-right: 0;
 }
