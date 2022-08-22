@@ -8,6 +8,8 @@
     --portfolio-select-list-background-color: #f5f4fa;
     --modal-open-btn-background-color: #188ce8;
     --bottom-address-tel-mail-color: rgba(255, 255, 255, 0.6);
+    --border-color: #eeeeee;
+    --bold-font: 500;
 }
 
 body {
@@ -35,27 +37,22 @@ ol {
     padding-left: 0;
 }
 .link {
-    /* убрать подчеркивание */
     text-decoration: none;
 }
 .list {
-    /* убрать точки */
     list-style: none;
 }
 img {
-    /* убрать отступ между картинками */
     display: block;
 }
 button {
-    /* рука+отсутствие бордера */
     cursor: pointer;
     border: none;
 }
 address {
-    font-size: normal;
+    font-style: normal;
 }
 .hidden {
-    /* паттерн visually hidden */
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -63,7 +60,6 @@ address {
     overflow: hidden;
     border: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
 }
@@ -84,13 +80,13 @@ address {
     color: var(--main-logo-color);
 }
 .menu-link {
-    font-weight: 500;
+    font-weight: var(--bold-font);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-font-color);
 }
 .menu-contact {
-    font-weight: 500;
+    font-weight: var(--bold-font);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--alternative-font-color);
@@ -141,6 +137,7 @@ address {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-font-color);
+    margin-bottom: 10px;
 }
 .specialty-item {
     line-height: 1.7;
@@ -176,7 +173,7 @@ address {
     margin-bottom: 10px;
 }
 .our-team-name {
-    font-weight: 500;
+    font-weight: var(--bold-font);
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -222,11 +219,14 @@ address {
     border-radius: 4px;
     font-family: inherit;
     font-style: inherit;
-    font-weight: 500;
+    font-weight: var(--bold-font);
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     color: var(--primary-font-color);
+    min-width: 103px;
+    padding-top: 6.2px;
+    padding-bottom: 6.2px;
 }
 .portfolio-select-list button:hover,
 .portfolio-select-list button:focus {
@@ -244,6 +244,7 @@ address {
     font-size: 16px;
     line-height: 1.9;
     color: var(--alternative-font-color);
+    margin-top: 4px;
 }
 .container {
     width: 1200px;
@@ -321,4 +322,28 @@ address {
 }
 .bottom-list li:last-child {
     margin-bottom: 0;
+}
+.portfolio-select-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.portfolio-select-list li:not(:last-child) {
+    margin-right: 9px;
+}
+.portfolio-example-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.portfolio-example-item {
+    width: calc((100% - 2 * 1170) / 3);
+}
+.portfolio-example-wrap {
+    padding: 20px 24px;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
