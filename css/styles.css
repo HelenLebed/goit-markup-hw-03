@@ -12,9 +12,11 @@
 
 body {
     font-size: 14px;
+    font-weight: 400;
     font-family: "Roboto", sans-serif;
     color: var(--primary-font-color);
     background-color: var(--secondary-font-color);
+    letter-spacing: 0.03em;
 }
 
 h1,
@@ -121,6 +123,7 @@ address {
     margin-top: 30px;
     width: 216px;
     height: 50px;
+    border-radius: 4px;
 }
 
 .modal-open-btn:hover,
@@ -149,9 +152,12 @@ address {
     line-height: 1.16;
     text-align: center;
     color: var(--primary-font-color);
+    padding-bottom: 50px;
 }
 .our-team {
     background: var(--portfolio-select-list-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .our-team-title {
     font-weight: 700;
@@ -159,9 +165,15 @@ address {
     line-height: 1.16;
     text-align: center;
     color: var(--primary-font-color);
+    margin-bottom: 50px;
 }
 .our-team-item {
     background: var(--secondary-font-color);
+    padding-bottom: 30px;
+}
+.our-team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .our-team-name {
     font-weight: 500;
@@ -187,6 +199,7 @@ address {
     font-size: 26px;
     line-height: 1.2;
     color: var(--secondary-font-color);
+    margin-bottom: 20px;
 }
 .bottom-address {
     font-style: normal;
@@ -270,7 +283,7 @@ address {
     margin-right: 0px;
 }
 .page-header {
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 .order-wrap {
     padding-top: 200px;
@@ -287,4 +300,25 @@ address {
 }
 .specialty:last-child {
     margin-right: 0;
+}
+.propositions-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+.our-team-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bottom-list li {
+    margin-bottom: 9px;
+}
+.bottom-list li:last-child {
+    margin-bottom: 0;
 }
