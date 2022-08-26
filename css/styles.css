@@ -84,12 +84,18 @@ address {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-font-color);
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .menu-contact {
     font-weight: var(--bold-font);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--alternative-font-color);
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .order {
     background: var(--order-background-color);
@@ -133,6 +139,7 @@ address {
     color: var(--main-logo-color);
 }
 .specialty-main {
+    font-size: inherit;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -149,7 +156,7 @@ address {
     line-height: 1.16;
     text-align: center;
     color: var(--primary-font-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .our-team {
     background: var(--portfolio-select-list-background-color);
@@ -166,10 +173,14 @@ address {
 }
 .our-team-item {
     background: var(--secondary-font-color);
-    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.our-team-wrap {
+    padding: 30px;
 }
 .our-team-name {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .our-team-name {
@@ -189,6 +200,8 @@ address {
 
 .bottom {
     background: var(--order-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .page-footer-logo {
     font-family: "Raleway", sans-serif;
@@ -214,6 +227,10 @@ address {
 .bottom-address-tel-mail:focus {
     color: var(--main-logo-color);
 }
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-select-list button {
     background: var(--portfolio-select-list-background-color);
     border-radius: 4px;
@@ -224,14 +241,15 @@ address {
     line-height: 1.6;
     text-align: center;
     color: var(--primary-font-color);
-    min-width: 103px;
-    padding-top: 6.2px;
-    padding-bottom: 6.2px;
+    /* min-width: 103px; */
+    padding: 6px 22px;
 }
 .portfolio-select-list button:hover,
 .portfolio-select-list button:focus {
     background: var(--main-logo-color);
     color: var(--secondary-font-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-example-list h2 {
     font-weight: 700;
@@ -263,13 +281,9 @@ address {
 }
 .contact-wrap {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .menu {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .menu li {
     margin-right: 50px;
@@ -283,6 +297,7 @@ address {
 .contact-item:last-child {
     margin-right: 0px;
 }
+
 .page-header {
     border-bottom: 1px solid #ececec;
 }
@@ -292,6 +307,8 @@ address {
 }
 .specialty-list {
     display: flex;
+}
+.features-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -302,10 +319,12 @@ address {
 .specialty:last-child {
     margin-right: 0;
 }
+.propositions-section {
+    padding-bottom: 94px;
+}
 .propositions-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 .our-team-list {
     display: flex;
@@ -314,8 +333,6 @@ address {
 .footer-wrap {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .bottom-list li {
     margin-bottom: 9px;
@@ -325,8 +342,7 @@ address {
 }
 .portfolio-select-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .portfolio-select-list li:not(:last-child) {
